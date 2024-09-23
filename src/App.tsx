@@ -9,7 +9,7 @@ const App: React.FC = () => {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>My Blog</h1>
+          <h1><a href="/">My Blog</a></h1>
         </header>
         <main>
           <Routes>
