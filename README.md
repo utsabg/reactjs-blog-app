@@ -1,3 +1,84 @@
+
+# Blog Application
+
+## Author
+Utsab Gyawali (20279192)
+
+## Repository Links
+- Backend (Laravel): [https://github.com/utsabg/blog/tree/feature/api](https://github.com/utsabg/blog/tree/feature/api)
+- Frontend (React with TypeScript): [https://github.com/utsabg/reactjs-blog-app](https://github.com/utsabg/reactjs-blog-app)
+
+## Description
+This project is a blog application with a Laravel backend API and a React frontend. It allows users to view a list of blog posts and read individual post details.
+
+## Setup Instructions
+
+### Backend (Laravel)
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/utsabg/blog.git
+   cd blog
+   git checkout feature/api
+   ```
+
+2. Follow the README instructions in the Laravel zip file for detailed setup.
+
+3. Install dependencies:
+   ```
+   composer install
+   ```
+
+4. Set up your `.env` file with appropriate database credentials.
+
+5. Run migrations:
+   ```
+   php artisan migrate
+   ```
+
+6. Start the Laravel development server:
+   ```
+   php artisan serve
+   ```
+
+7. Test the API endpoints using Postman or any API testing tool.
+
+### Frontend (React with TypeScript)
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/utsabg/reactjs-blog-app.git
+   cd reactjs-blog-app
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+
+   npm install react-router-dom axios 
+
+   ```
+
+3. Update the API base URL:
+   - Open `src/services/api.ts`
+   - Change `const API_BASE_URL = 'http://blog.test/api';` to the Laravel application path
+
+4. Start the React development server:
+   ```
+   npm start
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000`
+
+## Important Note
+Make sure to update the API base URL in the React app (`reactjs-blog-app/src/services/api.ts`) to match the Laravel application path before running the frontend.
+
+## Technologies Used
+- Backend: Laravel, PHP, MongoDB
+- Frontend: React, TypeScript
+- API: Laravel Sanctum
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
