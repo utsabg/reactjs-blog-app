@@ -5,10 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 export interface BlogPost {
-  id: number;
+  _id: string;
   title: string;
-  content: string;
+  description: string;
+  photo_url: string;
   created_at: string;
+  updated_at: string;
+  user_id: string;
+}
+
+export interface ApiResponse {
+  data: BlogPost;
+  message: string;
 }
 
 const root = ReactDOM.createRoot(
